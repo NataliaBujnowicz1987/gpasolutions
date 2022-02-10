@@ -19,7 +19,7 @@
 
 
     body {
-        background-color: #ebebeb;
+        background-color: #151948;
         width: 100%;
         min-height: 100vh;
         padding: 2em 5em;
@@ -32,7 +32,8 @@
     }
 
     div {
-        background-color: white;
+        background-color: #151948;
+        color: white;
         padding: 3em;
         /* width: 60%; */
         box-shadow: 0px 0px 2px 0px #6d6b6b;
@@ -46,18 +47,30 @@
         font-size: 18px;
     }
 
-    h1 {
+    h1, h2 {
         margin: 1.5em 0;
     }
 
     a {
         text-decoration: none;
-        color: rgb(62, 62, 173);
+        color:rgb(134, 134, 219);
+ 
         transition: all 1s linear;
     }
 
     a:hover {
-        color:rgb(134, 134, 219)
+        color: rgb(62, 62, 173);
+    }
+
+    .contact-details {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        margin: 0 auto;
+    }
+
+    .contact-details a {
+       color: white;
     }
 
     @media only screen and (max-width: 800px) {
@@ -68,6 +81,13 @@
         h1 {
             font-size: 26px;
         }
+
+        .contact-details {
+        flex-direction: column;
+   
+        gap: 0.2em;
+     
+    }
     }
 
     @media only screen and (max-width: 600px) {
@@ -99,18 +119,33 @@
 
 
     <div>
-        <p>News from GPA Solutions.</p>
-        <p>From 2022 we have changed how we deliver our training.</p>
+        <h1>News from GPA Solutions.</h1>
+        <h2>From 2022 we have changed how we deliver our training.</h2>
 
-        <h1>We are no longer delivering classroom based QQI accredited courses.</h1>
+        <p>We are no longer delivering classroom based QQI accredited courses.</p>
 
         <p>For online courses in Accounts, Payroll and Taxation contact either
             Sonia Woods or Brendan Madden</p>
             <br/>
 
-        <h3>Sonia Woods <br/> <a href='https://www.soniawoods.ie/' target='_blank'> www.soniawoods.ie</a></h3>
+        <h3>Sonia Woods <br/> 
+            <a href='https://www.soniawoods.ie/' target='_blank'> www.soniawoods.ie</a> 
+        </h3>
+        <br/>
+        <span class='contact-details'>
+            <a tel='+353 87 1224432'>Mobile: 087 122 4432</a><br/>
+            <a href="mailto:info@soniawoods.ie">Email: info@soniawoods.ie</a>
+        </span>
+      
+       
+        <br>
         <br>
         <h3>Brendan Madden <br/> <a href='https://www.platonow.ie/' target='_blank'> www.platonow.ie</a></h3>
+        <br/>
+        <span class='contact-details'>
+            <a tel='+353 87 233 7729'>Mobile: 087 233 7729</a><br/>
+            <a href="mailto:info@platonow.ie">Email: info@platonow.ie</a>
+        </span>
     </div>
     
 </body>
